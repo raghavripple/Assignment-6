@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Laptop Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🖥️ Build Your Custom Laptop</h1>
+
+    <form id="laptopForm">
+
+      <label>Processor:</label>
+      <select id="processor">
+        <option value="Intel i5">Intel i5</option>
+        <option value="Intel i7">Intel i7</option>
+        <option value="AMD Ryzen 5">AMD Ryzen 5</option>
+        <option value="AMD Ryzen 7">AMD Ryzen 7</option>
+      </select>
+
+      <label>RAM:</label>
+      <select id="ram">
+        <option value="8GB">8GB</option>
+        <option value="16GB">16GB</option>
+        <option value="32GB">32GB</option>
+      </select>
+
+      <label>Storage:</label>
+      <select id="storage">
+        <option value="256GB SSD">256GB SSD</option>
+        <option value="512GB SSD">512GB SSD</option>
+        <option value="1TB SSD">1TB SSD</option>
+      </select>
+
+      <label>Graphics Card:</label>
+      <select id="gpu">
+        <option value="Integrated">Integrated</option>
+        <option value="NVIDIA RTX 3050">NVIDIA RTX 3050</option>
+        <option value="NVIDIA RTX 4060">NVIDIA RTX 4060</option>
+      </select>
+
+      <label>Display Size:</label>
+      <select id="display">
+        <option value="13 inch">13 inch</option>
+        <option value="15 inch">15 inch</option>
+        <option value="17 inch">17 inch</option>
+      </select>
+
+      <label>Operating System:</label>
+      <select id="os">
+        <option value="Windows 11">Windows 11</option>
+        <option value="Linux">Linux</option>
+        <option value="No OS">No OS</option>
+      </select>
+
+      <label>Warranty:</label>
+      <select id="warranty">
+        <option value="1 Year">1 Year</option>
+        <option value="2 Years">2 Years</option>
+        <option value="3 Years">3 Years</option>
+      </select>
+
+      <label>Accessories:</label>
+      <input type="checkbox" value="Wireless Mouse" name="accessories" /> Wireless Mouse<br />
+      <input type="checkbox" value="Laptop Bag" name="accessories" /> Laptop Bag<br />
+      <input type="checkbox" value="Cooling Pad" name="accessories" /> Cooling Pad<br />
+
+      <button type="submit">Build Laptop</button>
+    </form>
+
+    <div id="summary"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
